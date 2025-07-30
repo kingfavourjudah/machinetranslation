@@ -1,0 +1,10 @@
+[build]
+target = "aarch64-apple-darwin"
+
+[target.aarch64-apple-darwin]
+rustflags = [
+    "-C",
+    "link-arg=-std=c++17",
+    "-C",
+    "link-arg=-Wno-nested-namespace",
+]
